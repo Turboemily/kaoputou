@@ -1,0 +1,85 @@
+/*/////////////////*/
+.guide1-nav {
+  width: 600px;
+}
+.guide1-nav ul {
+  width: 100%;
+  overflow: scroll;
+  padding: 0;
+}
+.guide1-nav li {
+  float: left;
+}
+.guide1-nav a {
+  text-decoration: none;
+  color: #777;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+}
+.guide1-nav a:hover {
+  background-color: #ccc;
+  text-decoration: none;
+}
+.guide1-nav a:active,
+.guide1-nav a:visited {
+  color: #ff5d6c;
+  text-decoration: none;
+}
+.guide1-container {
+  font-size: 20px;
+  padding: 16px 0 0px 15px;
+  color: #777;
+  height: 490px;
+}
+.panel-title a:focus,
+.panel-title a:hover {
+  color: #777;
+  text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  .guide2-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .guide1-nav {
+    display: none;
+  }
+  .guide2-nav {
+    width: 23%;
+    float: left;
+    margin-top: 66px;
+    border: 1px solid #8b8b8b;
+    border-radius: 10px;
+  }
+  .guide2-nav ul {
+    padding: 0;
+  }
+  .guide2-nav a {
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #777;
+  }
+  .guide2-nav a:hover {
+    background-color: #f5f5f5;
+    color: #777;
+  }
+  .guide1-container {
+    width: 70%;
+    float: right;
+    border: 1px solid #777;
+    margin-top: 63px;
+    border-radius: 10px;
+  }
+  #container {
+    width: 80%;
+    height: 560px;
+  }
+  #content-footer {
+    clear: both;
+  }
+}

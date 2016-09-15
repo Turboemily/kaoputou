@@ -1,0 +1,243 @@
+/*-----------------------------section---------------------------------------*/
+/*/菜单栏-/*/
+.demo1-span,
+.demo1-a3,
+.demo1-a1,
+.demo1-a2 {
+  font-size: 15px;
+}
+.demo1-span,
+.demo1-a3 {
+  color: #dddddd;
+}
+.demo1-a1 {
+  color: white;
+  background-color: #fd5d5d;
+  border-radius: 10px;
+  float: left;
+  margin-right: 25px;
+  width: 50px;
+}
+.demo1-a1:hover {
+  text-decoration: none;
+  color: white;
+}
+.demo1-a2 {
+  color: #7b7b7b;
+}
+.demo1-a3,
+.demo1-a2 {
+  float: left;
+  margin-right: 22px;
+}
+.demo1-a3:hover,
+.demo1-a2:hover {
+  color: #fd5d5d;
+  text-decoration: none;
+}
+.demo1-a1,
+.demo1-a2,
+.demo1-a3 {
+  margin-top: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+.demo1-div1,
+.demo1-div2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+.demo-a4 {
+  float: right;
+  color: #fd5d5d;
+}
+/*<!--------------------------------------pictureliast----------------------------->*/
+demo2-container a {
+  display: inline-block;
+}
+.demo2-div1 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+  position: relative;
+}
+.pub-span1 {
+  font-size: 18px;
+}
+.pub-span2,
+.pub-span3,
+.demo2-div2,
+.demo2-div3,
+#pub-countDown {
+  font-size: 14px;
+}
+.pub-div1 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.pub-span3,
+.demo2-div2,
+.demo2-div3 {
+  color: #a5a5a5;
+}
+.demo2-span1,
+.demo2-span2,
+.pub-page4,
+.pub-page1,
+.pub-page3 {
+  color: #6a6a6a;
+  font-size: 16px;
+}
+.pub-span4 {
+  color: #ea9090;
+}
+.pub-span3 {
+  position: absolute;
+  left: 20px;
+}
+.pub-span4 {
+  position: absolute;
+  left: 95px;
+}
+.pub-countdown {
+  width: 89%;
+  margin: 0 auto;
+  border: 1px solid #51d090;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 50px;
+}
+#pub-countDown1,
+#pub-countDown2,
+#pub-countDown3,
+#pub-countDown4,
+#pub-countDown5,
+#pub-countDown6,
+#pub-countDown7,
+#pub-countDown8,
+#pub-countDown9 {
+  width: 100%;
+  color: #51d090;
+}
+.demo2-div2 {
+  float: left;
+  margin: 20px 0 10px 20px;
+}
+.demo2-div3 {
+  float: right;
+  margin: 20px 20px 10px 0;
+}
+/*////////////////pagenumber////////////*/
+.pub-page4,
+.pub-page1 {
+  width: 98px;
+  height: 47px;
+  line-height: 47px;
+  border-radius: 48px;
+  /* border: 1px solid #f8f8f8; */
+  border: 1px solid #ccc;
+}
+.pub-page2,
+.pub-page3 {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+}
+.pub-page1,
+.pub-page2,
+.pub-page3 {
+  float: left;
+  margin-right: 6px;
+}
+.pub-page4 {
+  float: right;
+}
+.pub-page2 {
+  background-color: #fd5d5d;
+  color: white;
+}
+.demo3-div1 {
+  width: 315px;
+  margin-top: 21px;
+}
+.demo1-div2 {
+  height: 100px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 650px) {
+  .section {
+    width: 94%;
+    height: auto;
+    margin: 20px 20px;
+  }
+  #dome1-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+  }
+  #dome1-container .demo1-div2 {
+    overflow: hidden;
+  }
+  #dome1-container .demo1-div2 .demo-a4 {
+    float: right;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1025px) {
+  #dome1-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 185px;
+    margin: 50px auto;
+  }
+  #dome1-container .demo1-div2 {
+    overflow: hidden;
+  }
+  #dome1-container .demo1-div2 .demo-a4 {
+    float: right;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #dome1-container {
+    width: 1025px;
+    border: 1px solid #ccc;
+    min-height: 185px;
+    margin: 50px auto;
+  }
+  #dome1-container .demo1-div2 {
+    overflow: hidden;
+  }
+  #dome1-container .demo1-div2 .demo-a4 {
+    float: right;
+  }
+  .demo2-container {
+    width: 1025px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    height: 1300px;
+  }
+  .demo2-container .demo2-div1 {
+    width: 30%;
+    float: left;
+    margin-right: 51px;
+  }
+  .demo2-container .demo2-div1-special {
+    width: 30%;
+    float: right;
+    margin-right: 0px;
+  }
+  .demo2-container a {
+    display: inline-block;
+    color: #a5a5a5;
+  }
+  .demo2-container a:hover {
+    color: #a5a5a5;
+    text-decoration: none;
+  }
+  .demo3-container {
+    width: 1025px;
+    margin: 22px auto;
+  }
+}
