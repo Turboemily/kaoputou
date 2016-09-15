@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="stylesheets/init.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style2.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="靠谱投1/bootstrap/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="靠谱投1/bootstrap/bootstrap.min.css">
+    <script src="靠谱投1/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/style.css">
+    <style>
+        .ui-dialog-content, .ui-widget-content{
+            height: 405px;
+        }
+    </style>
+</head>
+<body>
+<!------------------导航-------------------------------->
+<div class="nav">
+    <img src="images/list.png" alt="" id="nav-img2">
+    <img src="images/logo-new.png" alt="a" id="nav-img1">
+    <ul>
+        <li><a href="index.html" id="nav-a">首页</a></li>
+        <li><a href="domelike.html">投我喜欢</a></li>
+        <li><a href="richRoad.html">融资之路</a></li>
+        <li><a href="guide.html">新手指南</a></li>
+    </ul>
+    <form action="#" method="post">
+        <input type="text" value="找项目">
+        <a href="#"><img src="images/suosou.jpg" alt=""></a>
+    </form>
+    <div id="nav-div">
+        <div class="nav-div1"><a href="#">优先认购通道</a></div>
+        <div id="nav-div4">
+            <div class="nav-div2"><a href="#">登录</a></div>
+            <div class="nav-div3"><a href="#">注册</a></div>
+        </div>
+    </div>
+</div>
+
+<!---------------signInandlogin---------------->
+<form action="" id="reg">
+<div class="login-div">
+    <div class="login-div1">
+        <div class="login-div2"><a href="#">登录</a></div>
+        <div class="sign-div1"><a href="#">注册</a></div>
+    </div>
+    <div class="login-num">
+        <input type="text" placeholder="手机号" id="phoneNumber" name="phoneNumber"><span id="login-span1" style="display: none;">请输入正确格式的手机号码</span>
+    </div>
+    <div class="login-psd">
+        <input type="text" placeholder="密码" id="password"><span id="login-span2" style="display: none;">请输入6-32位包含字母数字的密码</span>
+    </div>
+    <div class="login-sub">
+        <button type="submit" id="login">登录</button>
+    </div>
+    <div class="login-find">找回密码</div>
+    <div class="login-wei">
+        <button id="weixin">使用微信快速登录</button>
+    </div>
+    <div class="login-end">©2016 靠谱投 京ICP备15039009号</div>
+    <div id="dialog">
+        <img src="images/erweima.png" alt="" style="width: 100%;">
+    </div>
+</div>
+</form>
+<script>
+    $(function () {
+        var loginSpan1 = $("#login-span1");
+        $("#dialog").dialog({
+           autoOpen:false,
+           width:405,
+        }) ;
+        $("#weixin").click(function (e) {
+            e= event||window.event;
+            e.preventDefault();
+            $("#dialog").dialog("open");
+        });
+        $("#phoneNumber").blur(function () {
+            if(document.getElementById("phoneNumber").value.length != 11){
+                loginSpan1.css({display: "block"});
+            }
+
+        });
+    });
+</script>
+</body>
+</html>

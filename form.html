@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+<p>1.品牌信息</p>
+<hr>
+<p>品牌名称*</p>
+<input type="text">
+<p>餐厅类型*</p>
+<select>
+    <option value ="choose">请选择</option>
+    <option value ="lucai">鲁菜</option>
+    <option value="yuecai">粤菜</option>
+    <option value="chuangcai">川菜</option>
+</select>
+<p>直营门店数量</p><span>*[请输入数字]</span>
+<input type="text" >
+    <p>门店所在城市*</p>
+    <hr width=150 style="border:1px dashed red; height:1px">
+    <p>多个城市请用逗号分隔</p>
+    <textarea name="MSG" cols=40 rows=4></textarea>
+   <p>2.融资计划</p>
+   <hr>
+   <p>门店众筹方案</p>
+        <p>融资类型*</p>
+        <hr width=150 style="border:1px dashed red; height:1px">
+        <p>新店众筹是为即将新开的单店融资</p>
+        <p>老店众筹是为已经经营一段时间的单店融资</p>
+        <label for="new">
+        <input type="radio" name="type" value="new" id="new">新店众筹</label>
+        <label for="old">
+        <input type="radio" name="type" value="new" id="old">老店众筹</label>
+</form>
+</body>
+</html>
